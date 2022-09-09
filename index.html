@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>CV HTML and CSS</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#contacts" class="nav-link">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a href="#summary" class="nav-link">Summary</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#code" class="nav-link">Code</a>
+            </li>
+            <li class="nav-item">
+              <a href="#courses" class="nav-link">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#education" class="nav-link">Education</a>
+            </li>
+            <li class="nav-item">
+              <a href="#english" class="nav-link">English</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container main-container">
+        <section class="section">
+          <img
+            src="https://raw.githubusercontent.com/alextes90/rsschool-cv/rsschool-cv-html/photo.jpg"
+            alt="photo"
+          />
+        </section>
+        <section class="block-img section">
+          <h1 class="section-title">Teslin Aleksandr</h1>
+          <p class="subtitle">JUNIOR FRONT-END DEVELOPER</p>
+        </section>
+        <section class="section" id="contacts">
+          <h2 class="section-title">Contacts</h2>
+          <ul>
+            <li><span class="bold">Location:</span>Warszawa, Poland;</li>
+            <li><span class="bold">Email:</span>a.teslin90@gmail.com;</li>
+            <li>
+              <span class="bold">GitHub:</span
+              ><a
+                href="https://github.com/alextes90/rsschool-cv/blob/gh-pages/cv.md"
+                >@alextes90</a
+              >
+            </li>
+            <li>
+              <span class="bold">Codewars Profile:</span
+              ><a href="https://www.codewars.com/users/alextes90">alextes90</a>
+            </li>
+          </ul>
+        </section>
+        <section class="section" id="summary">
+          <h2 class="section-title">Summary</h2>
+          <p class="text">
+            Have ended Belarussian State University at 2012 (institute of
+            Business and management of technology), and then for 10 years have
+            been working at sales sphere (B2B). And the begging as sales manager
+            then as the head of sales department. For now has decided to change
+            the sphere of work. Has passed JS courses from Udemy. The course was
+            useful as i have learned a lot of JS not just fundamentals but more
+            advanced things and made some projects. This was helpful before
+            entering Rolling Scopes.
+          </p>
+        </section>
+        <section class="section" id="skills">
+          <h2 class="section-title">Skills</h2>
+          <ul>
+            <li>HTML, CSS</li>
+            <li>JS</li>
+            <li>Git, GitHub</li>
+            <li>VS Code, parcel, npm</li>
+          </ul>
+        </section>
+        <section class="section" id="code">
+          <h2 class="section-title">Code</h2>
+          <pre>
+    function dirReduc(arr) {
+        const numIt = arr.length;
+        for (let i = 0; i <= numIt; i++) {
+          for (let y = 0; y <= numIt; y++) {
+            if (
+              (arr[y] === "NORTH" && arr[y + 1] === "SOUTH") ||
+              (arr[y] === "SOUTH" && arr[y + 1] === "NORTH")
+            ) {
+              arr.splice(y, 2);
+            }
+            if (
+              (arr[y] === "WEST" && arr[y + 1] === "EAST") ||
+              (arr[y] === "EAST" && arr[y + 1] === "WEST")
+            ) {
+              arr.splice(y, 2);
+            }
+          }
+        }
+        return arr;
+      }
+          </pre>
+        </section>
+        <section class="section" id="courses">
+          <h2 class="section-title">Courses</h2>
+          <ol>
+            <li class="numeric-list">
+              <a href="https://code-basics.com/">Code-basics</a>
+            </li>
+            <li class="numeric-list">
+              <a
+                href="https://www.udemy.com/course/the-complete-javascript-course/learn/lecture/22649727?start=165#overview"
+                >Udemy: from Zero to Expert</a
+              >
+            </li>
+            <li class="numeric-list">
+              <a href="https://rs.school/">RS-School</a>
+            </li>
+          </ol>
+        </section>
+        <section class="section" id="projects">
+          <h2 class="section-title">Projects</h2>
+        </section>
+        <section class="section" id="education">
+          <h2 class="section-title">Education</h2>
+          <p class="text">
+            Belarussian State Universite:
+            <a href="https://sb.bsu.by/"
+              >Business School <span class="italic">BBA</span></a
+            >
+          </p>
+        </section>
+        <section class="section" id="english">
+          <h2 class="section-title">English</h2>
+          <p class="text">D2 Upper-intermediate.</p>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container"></div>
+    </footer>
+  </body>
+</html>
