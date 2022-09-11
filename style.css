@@ -20,16 +20,26 @@ header {
 }
 
 main {
-  border: 1px solid red;
+  border-top: 1px solid red;
+  margin: 0 40px;
 }
 
 footer {
-  border: 1px solid red;
+  border-top: 1px solid red;
+  margin: 0 40px;
 }
 
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  min-height: 50px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
 }
 
 .nav-list {
@@ -42,27 +52,31 @@ footer {
 .block-img {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .nav-link {
   padding: 0 20px;
   line-height: 50px;
-  transition: 0.3s;
+  transition: 0.5s;
   text-decoration: none;
 }
 
-.section-item a {
-  color: #829985;
+.link-body {
   text-decoration: none;
-  transition: color 0.5s;
+  transition: 0.5s;
 }
-.section-item a:hover {
-  color: #855c5c;
+
+.nav-link:hover,
+.link-body:hover {
+  color: #531b07;
+  font-size: 18px;
 }
 
 .bold {
   font-weight: bold;
   padding: 0 5px;
+  color: #531b07;
 }
 
 .section-title {
@@ -72,11 +86,13 @@ footer {
   text-transform: uppercase;
   letter-spacing: 5px;
   color: #531b07;
+  position: relative;
 }
 
-.subtitle {
-  font-size: 20px;
-  font-weight: 400;
+.section-subtitle {
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 5px;
   color: #531b07;
@@ -99,18 +115,31 @@ footer {
   flex-wrap: wrap;
 }
 
-.section {
+section {
   width: 50%;
 }
 
 @media (max-width: 768px) {
-  .section {
+  section {
     width: 100%;
   }
 }
 
+h1 {
+  border-bottom: 1px solid red;
+  margin: 10px 150px 20px 20px;
+}
+
 img {
-  border-radius: 50%;
-  width: 300px;
+  border-radius: 1%;
+  width: 200px;
   margin: 20px;
+}
+
+.rss {
+  width: 140px;
+  height: 90px;
+  background-image: url('RsSchoolLogo.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
